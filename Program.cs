@@ -24,20 +24,22 @@ namespace Module_3_practical_task_1
             }
             Console.WriteLine("What is your favourite day of week?");
             day = (DayOfWeek)checked(byte.Parse(Console.ReadLine()));
+            Console.WriteLine("Enter your birthdate: ");
+            var birthdate = checked(Console.ReadLine());
             Console.WriteLine("My name is {0}",myName); 
             Console.WriteLine("My age is {0}", age);
             Console.WriteLine("Your favourite day of week is " +  day);
-
-            Console.WriteLine("Do I have a pet? {0}", havePet);
-            Console.WriteLine("My shoe size is {0}", legSize);
-            Console.WriteLine($"My favorite traffic light color is {lights}");
-            double result = 5.0 / 2;
-            Console.WriteLine(result);
-            int count = 10;
-            Console.WriteLine("Value:{0},Prefix Increment:{1}", count, ++count);
-            Console.WriteLine("Value:{0},Postfix Increment:{1}", count, count++);
-            double result_ostatok = 10 % 3;
-            Console.WriteLine(result_ostatok);
+            Console.WriteLine("Your birthday is " + birthdate);
+            //Console.WriteLine("Do I have a pet? {0}", havePet);
+            //Console.WriteLine("My shoe size is {0}", legSize);
+            //Console.WriteLine($"My favorite traffic light color is {lights}");
+            //double result = 5.0 / 2;
+            //Console.WriteLine(result);
+            //int count = 10;
+            //Console.WriteLine("Value:{0},Prefix Increment:{1}", count, ++count);
+            //Console.WriteLine("Value:{0},Postfix Increment:{1}", count, count++);
+            //double result_ostatok = 10 % 3;
+            //Console.WriteLine(result_ostatok);
             Console.ReadKey();
         }
     }
