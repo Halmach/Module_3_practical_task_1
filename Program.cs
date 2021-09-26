@@ -11,19 +11,24 @@ namespace Module_3_practical_task_1
             byte age = 34;
             bool havePet = true;
             float legSize = 40;
+            DayOfWeek day;
             Semaphore lights = Semaphore.Green;
             Console.WriteLine("What is your name?");
             myName =  Console.ReadLine();
             Console.WriteLine("Enter your age");
-            age = (byte)int.Parse(Console.ReadLine());
-            //bool isAgeCorrenct = byte.TryParse(Console.ReadLine(), out age);
-            //while (!isAgeCorrenct)
-            //{
-            //    Console.WriteLine("Enter your age");
-            //    isAgeCorrenct = byte.TryParse(Console.ReadLine(), out age);
-            //}
+            //age = checked((byte)int.Parse(Console.ReadLine()));
+            bool isAgeCorrenct = byte.TryParse(Console.ReadLine(), out age);
+            while (!isAgeCorrenct)
+            {
+                Console.WriteLine("Enter your age");
+                isAgeCorrenct = byte.TryParse(Console.ReadLine(), out age);
+            }
+            Console.WriteLine("What is your favourite day of week?");
+            day = (DayOfWeek)checked(byte.Parse(Console.ReadLine()));
             Console.WriteLine("My name is {0}",myName); 
             Console.WriteLine("My age is {0}", age);
+            Console.WriteLine("Your favourite day of week is " +  day);
+
             Console.WriteLine("Do I have a pet? {0}", havePet);
             Console.WriteLine("My shoe size is {0}", legSize);
             Console.WriteLine($"My favorite traffic light color is {lights}");
@@ -44,5 +49,16 @@ namespace Module_3_practical_task_1
         Yellow = 200,
         Green = 300
     }
+
+    //enum DaysOfWeek
+    //{
+    //    Monday = 1,
+    //    Tuesday,
+    //    Wednesday,
+    //    Thursday,
+    //    Friday,
+    //    Saturday,
+    //    Sunday
+    //}
 
 }
