@@ -21,6 +21,9 @@ namespace Module_3_practical_task_1
             Console.WriteLine($"My favorite traffic light color is {lights}");
             double result = 5.0 / 2;
             Console.WriteLine(result);
+            int count = 10;
+            Console.WriteLine("Value:{0},Prefix Increment:{1}", count, ++count);
+            Console.WriteLine("Value:{0},Postfix Increment:{1}", count, count++);
             Console.ReadKey();
         }
     }
