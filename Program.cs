@@ -6,13 +6,12 @@ namespace Module_3_practical_task_1
     {
         static void Main(string[] args)
         {
-            string myName;
-            myName = "Halmach";
-            byte age = 34;
+            var myName = "Halmach";
+            var age = 34;
             bool havePet = true;
             float legSize = 40;
-            DayOfWeek day;
-            Semaphore lights = Semaphore.Green;
+            var day = DayOfWeek.Monday;
+            var lights = Semaphore.Green;
             Console.WriteLine("What is your name?");
             myName =  Console.ReadLine();
             Console.WriteLine("Enter your age");
