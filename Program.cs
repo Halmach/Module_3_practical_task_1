@@ -12,8 +12,16 @@ namespace Module_3_practical_task_1
             bool havePet = true;
             float legSize = 40;
             Semaphore lights = Semaphore.Green;
-
-
+            Console.WriteLine("What is your name?");
+            myName =  Console.ReadLine();
+            Console.WriteLine("Enter your age");
+            age = (byte)int.Parse(Console.ReadLine());
+            //bool isAgeCorrenct = byte.TryParse(Console.ReadLine(), out age);
+            //while (!isAgeCorrenct)
+            //{
+            //    Console.WriteLine("Enter your age");
+            //    isAgeCorrenct = byte.TryParse(Console.ReadLine(), out age);
+            //}
             Console.WriteLine("My name is {0}",myName); 
             Console.WriteLine("My age is {0}", age);
             Console.WriteLine("Do I have a pet? {0}", havePet);
