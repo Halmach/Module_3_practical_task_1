@@ -18,8 +18,9 @@ namespace Module_3_practical_task_1
             Console.WriteLine("My age is {0}", age);
             Console.WriteLine("Do I have a pet? {0}", havePet);
             Console.WriteLine("My shoe size is {0}", legSize);
-            Console.WriteLine($"My favorite traffic light color is {lights}"); 
-
+            Console.WriteLine($"My favorite traffic light color is {lights}");
+            double result = 5.0 / 2;
+            Console.WriteLine(result);
             Console.ReadKey();
         }
     }
