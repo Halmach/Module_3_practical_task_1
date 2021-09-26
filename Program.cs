@@ -24,6 +24,8 @@ namespace Module_3_practical_task_1
             int count = 10;
             Console.WriteLine("Value:{0},Prefix Increment:{1}", count, ++count);
             Console.WriteLine("Value:{0},Postfix Increment:{1}", count, count++);
+            double result_ostatok = 10 % 3;
+            Console.WriteLine(result_ostatok);
             Console.ReadKey();
         }
     }
